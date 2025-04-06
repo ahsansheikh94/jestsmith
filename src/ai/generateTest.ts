@@ -1,5 +1,6 @@
 import { OpenAI } from "openai";
 import dotenv from "dotenv";
+import cleanCodeBlock from "../utils/clean-code";
 
 dotenv.config();
 
@@ -20,5 +21,5 @@ export async function generateTest(
     temperature: 0.2,
   });
 
-  return cleanCodeBlock(res.choices[0].message?.content ?? "");
+  return cleanCodeBlock(res.choices[0].message?.content || "") || "";
 }

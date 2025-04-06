@@ -4,3 +4,4 @@ function cleanCodeBlock(code: string): string {
     .replace(/```$/, "") // remove closing ```
     .trim(); // remove extra spaces
 }
+export default cleanCodeBlock;
