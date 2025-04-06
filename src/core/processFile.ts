@@ -8,6 +8,7 @@ export async function processFile(
   description?: string,
   modal?: string
 ): Promise<void> {
+  console.log("Generating tests for: ", filePath);
   const sourceCode = await readFile(filePath, "utf-8");
   const prompt = buildPrompt(sourceCode, description);
   const testCode = await generateTest(prompt, modal);

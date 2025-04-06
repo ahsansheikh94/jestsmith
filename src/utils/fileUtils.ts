@@ -23,4 +23,5 @@ export async function writeTestFile(
   const testPath = join(testDir, fileName);
 
   await writeFile(testPath, testContent);
+  console.log(`✅ Test generated: ${testPath}`);
 }
