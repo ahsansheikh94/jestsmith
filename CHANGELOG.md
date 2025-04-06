@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/ahsansheikh94/jestsmith/compare/v1.1.0...v1.1.1) (2025-04-06)
+
+
+### Bug Fixes
+
+* clean ai generated code ([d05dced](https://github.com/ahsansheikh94/jestsmith/commit/d05dced5dce2f7e43f3fd1a55aac0f0b9e7127b1))
+
 # [1.1.0](https://github.com/ahsansheikh94/jestsmith/compare/v1.0.1...v1.1.0) (2025-04-06)
 
 
