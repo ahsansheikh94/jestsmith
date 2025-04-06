@@ -4,7 +4,8 @@ import { processFile } from "./processFile";
 
 export async function processFolder(
   folderPath: string,
-  description?: string
+  description?: string,
+  modal?: string
 ): Promise<void> {
   const entries = await readdir(folderPath);
 
@@ -13,9 +14,9 @@ export async function processFolder(
     const entryStat = await stat(fullPath);
 
     if (entryStat.isDirectory()) {
-      await processFolder(fullPath, description); // Recursively handle nested folders
+      await processFolder(fullPath, description, modal); // Recursively handle nested folders
     } else if (entryStat.isFile() && /\.(ts|tsx)$/.test(entry)) {
-      await processFile(fullPath, description);
+      await processFile(fullPath, description, modal);
     }
   }
 }

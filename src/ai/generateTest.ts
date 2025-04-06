@@ -3,13 +3,19 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
+const apiKey = process.env.OPENAI_API_KEY;
+if (!apiKey) throw new Error("Missing OpenAI API key!");
+
 const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
+  apiKey,
 });
 
-export async function generateTest(prompt: string): Promise<string> {
+export async function generateTest(
+  prompt: string,
+  modal?: string
+): Promise<string> {
   const res = await openai.chat.completions.create({
-    model: "gpt-4",
+    model: modal || "gpt-4",
     messages: [{ role: "user", content: prompt }],
     temperature: 0.2,
   });
