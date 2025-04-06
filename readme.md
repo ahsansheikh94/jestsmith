@@ -1,8 +1,3 @@
-Absolutely — here’s the **entire `README.md`**, perfectly formatted and ready to drop into your repo:
-
----
-
-````md
 # 🧪 JestSmith
 
 > 🧠💥 Auto-generate Jest test cases for your JavaScript/TypeScript code using AI — so you can ship confidently without writing a single test.
@@ -40,7 +35,6 @@ Absolutely — here’s the **entire `README.md`**, perfectly formatted and read
 ```bash
 npm install -g jestsmith
 ```
-````
 
 ---
 
