@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/ahsansheikh94/jestsmith/compare/v1.1.1...v1.1.2) (2025-04-06)
+
+
+### Bug Fixes
+
+* fix markdown code generation ([b9de031](https://github.com/ahsansheikh94/jestsmith/commit/b9de0312b37b390693f1a1aae3769e6990ae1f4e))
+
 ## [1.1.1](https://github.com/ahsansheikh94/jestsmith/compare/v1.1.0...v1.1.1) (2025-04-06)
 
 
