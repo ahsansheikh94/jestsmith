@@ -20,5 +20,5 @@ export async function generateTest(
     temperature: 0.2,
   });
 
-  return res.choices[0].message?.content ?? "";
+  return cleanCodeBlock(res.choices[0].message?.content ?? "");
 }
