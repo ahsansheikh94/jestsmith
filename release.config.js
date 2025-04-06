@@ -7,4 +7,5 @@ module.exports = {
     "@semantic-release/npm",
     "@semantic-release/git",
   ],
+  repositoryUrl: "https://github.com/ahsansheikh94/jestsmith.git",
 };
