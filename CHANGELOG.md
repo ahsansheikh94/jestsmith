@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/ahsansheikh94/jestsmith/compare/v1.1.2...v1.1.3) (2025-04-06)
+
+
+### Bug Fixes
+
+* make the input extention the same as the output extention ([ca696b5](https://github.com/ahsansheikh94/jestsmith/commit/ca696b56fdebb1f57bab62cb2004933df64d3071))
+
 ## [1.1.2](https://github.com/ahsansheikh94/jestsmith/compare/v1.1.1...v1.1.2) (2025-04-06)
 
 
