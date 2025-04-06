@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/ahsansheikh94/jestsmith/compare/v1.0.1...v1.1.0) (2025-04-06)
+
+
+### Features
+
+* add support for the optional modal flag ([eaf57d1](https://github.com/ahsansheikh94/jestsmith/commit/eaf57d1c09febc01d6572012bc5af79e311606fb))
+
 ## [1.0.1](https://github.com/ahsansheikh94/jestsmith/compare/v1.0.0...v1.0.1) (2025-04-06)
 
 

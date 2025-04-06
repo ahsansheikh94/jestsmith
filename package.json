@@ -1,6 +1,6 @@
 {
   "name": "jestsmith",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "An AI powered package that takes in code and an optional description and generates jest testcases for that code\"",
   "main": "dist/src/index.js",
   "type": "commonjs",
