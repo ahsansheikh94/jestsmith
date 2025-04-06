@@ -189,7 +189,7 @@ GitHub Actions will:
 
 ## 🪪 License
 
-MIT © [Your Name](https://github.com/ahsansheikh94)
+MIT © [Ahsan Sheikh](https://github.com/ahsansheikh94)
 
 ---
 
@@ -201,9 +201,6 @@ Found a bug? Have feature ideas?
 Love the tool?  
 → ⭐ Star it and share it with your team!
 
----
-
 ```
 
----
 ```
