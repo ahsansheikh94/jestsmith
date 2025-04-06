@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/ahsansheikh94/jestsmith/compare/v1.0.0...v1.0.1) (2025-04-06)
+
+
+### Bug Fixes
+
+* add fetch depth to checkout ([bc0e88c](https://github.com/ahsansheikh94/jestsmith/commit/bc0e88c349f2b01a4c28f3aea929da7f5595acc8))
+
 # 1.0.0 (2025-04-06)
 
 
