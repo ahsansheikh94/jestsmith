@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/ahsansheikh94/jestsmith/compare/v1.1.3...v1.2.0) (2025-04-06)
+
+
+### Features
+
+* add logs ([be7dd70](https://github.com/ahsansheikh94/jestsmith/commit/be7dd701fcd94c735f42d3b9a13e26e8d5fdf951))
+
 ## [1.1.3](https://github.com/ahsansheikh94/jestsmith/compare/v1.1.2...v1.1.3) (2025-04-06)
 
 
