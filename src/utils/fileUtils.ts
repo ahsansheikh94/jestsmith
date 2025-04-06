@@ -1,6 +1,16 @@
 import { writeFile } from "fs/promises";
 import { dirname, join, basename } from "path";
+import path from "path";
 import { mkdir } from "fs/promises";
+
+function getTestFilePath(inputPath: string): string {
+  const dir = path.dirname(inputPath);
+  const ext = path.extname(inputPath); // .ts, .js, .tsx, .jsx
+  const base = path.basename(inputPath, ext); // filename without extension
+  const testFileName = `${base}.test${ext}`; // keep original ext
+
+  return path.join(dir, testFileName);
+}
 
 export async function writeTestFile(
   originalPath: string,
@@ -9,7 +19,7 @@ export async function writeTestFile(
   const testDir = join(dirname(originalPath), "__tests__");
   await mkdir(testDir, { recursive: true });
 
-  const fileName = basename(originalPath).replace(/\.(ts|tsx)$/, ".test.ts");
+  const fileName = getTestFilePath(originalPath);
   const testPath = join(testDir, fileName);
 
   await writeFile(testPath, testContent);
