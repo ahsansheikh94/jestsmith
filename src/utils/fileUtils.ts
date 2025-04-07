@@ -4,12 +4,11 @@ import path from "path";
 import { mkdir } from "fs/promises";
 
 function getTestFilePath(inputPath: string): string {
-  const dir = path.dirname(inputPath);
   const ext = path.extname(inputPath); // .ts, .js, .tsx, .jsx
   const base = path.basename(inputPath, ext); // filename without extension
   const testFileName = `${base}.test${ext}`; // keep original ext
 
-  return path.join(dir, testFileName);
+  return testFileName;
 }
 
 export async function writeTestFile(
