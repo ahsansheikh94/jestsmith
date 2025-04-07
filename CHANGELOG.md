@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/ahsansheikh94/jestsmith/compare/v1.2.0...v1.2.1) (2025-04-07)
+
+
+### Bug Fixes
+
+* fix wrong path in write file ([7a271e8](https://github.com/ahsansheikh94/jestsmith/commit/7a271e8fd877d28dd11637e23dc496eb00e12074))
+
 # [1.2.0](https://github.com/ahsansheikh94/jestsmith/compare/v1.1.3...v1.2.0) (2025-04-06)
 
 
