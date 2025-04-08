@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/ahsansheikh94/jestsmith/compare/v1.2.1...v1.3.0) (2025-04-08)
+
+
+### Features
+
+* remove openai dependency; ignore unnecessary files; remove modal flag ([ab9dc70](https://github.com/ahsansheikh94/jestsmith/commit/ab9dc70c7d720d4620cd3f10170858746642a271))
+
 ## [1.2.1](https://github.com/ahsansheikh94/jestsmith/compare/v1.2.0...v1.2.1) (2025-04-07)
 
 
