@@ -79,7 +79,6 @@ jestsmith ./src/modules/user --describe "This is a NestJS User module with CRUD 
 | Option       | Description                                               |
 | ------------ | --------------------------------------------------------- |
 | `--describe` | (optional) Add context so the AI writes better tests      |
-| `--modal`    | (optional) OpenAI modal to use (default: gpt-4)           |
 | `--outDir`   | (coming soon) Customize the output folder for test files  |
 | `--dry-run`  | (coming soon) Preview the generated output without saving |
 
