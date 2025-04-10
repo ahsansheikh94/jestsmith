@@ -1,11 +1,10 @@
 import { readdir, stat } from "fs/promises";
 import { join } from "path";
 import { processFile } from "./processFile";
+import { IBinArgs } from "../types/bin-args";
 
-export async function processFolder(
-  folderPath: string,
-  description?: string
-): Promise<void> {
+export async function processFolder(args: IBinArgs): Promise<void> {
+  const { path: folderPath, ...rest } = args;
   const entries = await readdir(folderPath);
 
   for (const entry of entries) {
@@ -13,9 +12,9 @@ export async function processFolder(
     const entryStat = await stat(fullPath);
 
     if (entryStat.isDirectory()) {
-      await processFolder(fullPath, description); // Recursively handle nested folders
+      await processFolder({ path: fullPath, ...rest }); // Recursively handle nested folders
     } else if (entryStat.isFile() && /\.(ts|tsx)$/.test(entry)) {
-      await processFile(fullPath, description);
+      await processFile({ path: fullPath, ...rest });
     }
   }
 }

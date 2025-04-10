@@ -1,7 +1,7 @@
 import { writeFile } from "fs/promises";
-import { dirname, join, basename } from "path";
+import { join } from "path";
 import path from "path";
-import { mkdir } from "fs/promises";
+import fs from "fs-extra";
 
 function getTestFilePath(inputPath: string): string {
   const ext = path.extname(inputPath); // .ts, .js, .tsx, .jsx
@@ -15,12 +15,25 @@ export async function writeTestFile(
   originalPath: string,
   testContent: string
 ): Promise<void> {
-  const testDir = join(dirname(originalPath), "__tests__");
-  await mkdir(testDir, { recursive: true });
+  await writeFile(originalPath, testContent);
+  console.log(`✅ Test generated: ${originalPath}`);
+}
 
-  const fileName = getTestFilePath(originalPath);
-  const testPath = join(testDir, fileName);
+export function getOutputPath(originalFilePath: string, outDir?: string) {
+  const ext = path.extname(originalFilePath);
+  const baseName = path.basename(originalFilePath, ext);
+  const testFileName = `${baseName}.test${ext}`;
 
-  await writeFile(testPath, testContent);
-  console.log(`✅ Test generated: ${testPath}`);
+  if (outDir) {
+    // Preserve folder structure
+    const relativePath = path.relative(
+      process.cwd(),
+      path.dirname(originalFilePath)
+    );
+    const outputDir = path.join(outDir, relativePath);
+    fs.ensureDirSync(outputDir);
+    return path.join(outputDir, testFileName);
+  }
+
+  return path.join(path.dirname(originalFilePath), testFileName);
 }

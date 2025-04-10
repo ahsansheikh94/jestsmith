@@ -9,8 +9,12 @@ program
   .description("Generate Jest test cases using AI for JS/TS files or folders")
   .argument("<path>", "File or directory path")
   .option("-d, --describe <desc>", "Optional description of module/purpose")
+  .option(
+    "-o, --out-dir <dir>",
+    "Optional output directory to write the tests files to."
+  )
   .action((path, options) => {
-    runCLI(path, options.describe);
+    runCLI({ path, outDir: options["out-dir"], ...options });
   });
 
 program.parse();

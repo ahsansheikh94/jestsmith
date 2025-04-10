@@ -70,7 +70,7 @@ jestsmith ./src/modules/user --describe "This is a NestJS User module with CRUD 
 >
 > - Parse each file
 > - Understand file relationships (controllers, services, routes)
-> - Generate relevant Jest test cases into a `__tests__/` folder (coming soon: customizable location)
+> - Generate relevant Jest test cases into a `__tests__/` folder or in the `--out-dir`
 
 ---
 
@@ -79,7 +79,7 @@ jestsmith ./src/modules/user --describe "This is a NestJS User module with CRUD 
 | Option       | Description                                               |
 | ------------ | --------------------------------------------------------- |
 | `--describe` | (optional) Add context so the AI writes better tests      |
-| `--outDir`   | (coming soon) Customize the output folder for test files  |
+| `--outDir`   | (optional) Customize the output folder for test files     |
 | `--dry-run`  | (coming soon) Preview the generated output without saving |
 
 ---
@@ -148,7 +148,6 @@ Under the hood, JestSmith:
 ## 🤖 Roadmap
 
 - [ ] `--dry-run` to preview generated code
-- [ ] `--outDir` to customize test file output
 - [ ] Support `.jestsmithrc` config files
 - [ ] Built-in Prettier formatting
 - [ ] Estimate test coverage based on function count
