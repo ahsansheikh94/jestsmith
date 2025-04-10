@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import { Command } from "commander";
 import { runCLI } from "../src/cli/runCLI";
+import { IBinArgs } from "../src/types/bin-args";
 
 const program = new Command();
 
@@ -13,7 +14,7 @@ program
     "-o, --out-dir <dir>",
     "Optional output directory to write the tests files to."
   )
-  .action((path, options) => {
+  .action((path: string, options: Omit<IBinArgs, "path">) => {
     runCLI({ path, outDir: options["out-dir"], ...options });
   });
 

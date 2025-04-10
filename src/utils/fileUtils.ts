@@ -7,10 +7,14 @@ export async function writeTestFile(
   testContent: string
 ): Promise<void> {
   await writeFile(originalPath, testContent);
+  /* eslint-disable-next-line */
   console.log(`✅ Test generated: ${originalPath}`);
 }
 
-export function getOutputPath(originalFilePath: string, outDir?: string) {
+export function getOutputPath(
+  originalFilePath: string,
+  outDir?: string
+): string {
   const ext = path.extname(originalFilePath);
   const baseName = path.basename(originalFilePath, ext);
   const testFileName = `${baseName}.test${ext}`;

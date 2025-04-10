@@ -12,6 +12,7 @@ export async function runCLI(args: IBinArgs): Promise<void> {
   } else if (info.isDirectory()) {
     await processFolder(args);
   } else {
+    /* eslint-disable-next-line */
     console.error("Invalid path. Must be a file or directory.");
   }
 }
