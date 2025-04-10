@@ -1,3 +1,18 @@
+# [1.4.0](https://github.com/ahsansheikh94/jestsmith/compare/v1.3.0...v1.4.0) (2025-04-10)
+
+
+### Bug Fixes
+
+* fix eslint issues ([43e3f65](https://github.com/ahsansheikh94/jestsmith/commit/43e3f659fb84d892b9439f7567a28a0dbd047d37))
+* remove console.log; add correct eslint config file ([b10db43](https://github.com/ahsansheikh94/jestsmith/commit/b10db4369d34881ca55071fec21ec47a170beb5c))
+* use common js in eslint.config.js ([cc1d2b3](https://github.com/ahsansheikh94/jestsmith/commit/cc1d2b34f2a529f56222e21df0014d7c6381e783))
+
+
+### Features
+
+* add Linter and TS checks ([2bb4d1b](https://github.com/ahsansheikh94/jestsmith/commit/2bb4d1b6073446cf5e6e323cf1ce9d09e1ed2165))
+* added support for the --out-dir directory ([258d14d](https://github.com/ahsansheikh94/jestsmith/commit/258d14d47808584d7cb3457369095532bd0cb101))
+
 # [1.3.0](https://github.com/ahsansheikh94/jestsmith/compare/v1.2.1...v1.3.0) (2025-04-08)
 
 
