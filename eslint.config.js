@@ -1,5 +1,4 @@
-// eslint.config.js
-export default {
+module.exports = {
   root: true,
   env: {
     node: true,
