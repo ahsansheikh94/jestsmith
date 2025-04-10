@@ -16,7 +16,7 @@ export async function processFile(args: IBinArgs): Promise<void> {
     const testCode = await generateTest({ sourceCode, ...rest });
 
     const outputPath = getOutputPath(filePath, rest.outDir);
-    console.log(outputPath);
+
     await writeTestFile(outputPath, testCode);
   } else {
     console.log("Skipping tests for a non js/ts or a styles file: ", filePath);

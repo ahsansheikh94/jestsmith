@@ -1,15 +1,6 @@
 import { writeFile } from "fs/promises";
-import { join } from "path";
 import path from "path";
 import fs from "fs-extra";
-
-function getTestFilePath(inputPath: string): string {
-  const ext = path.extname(inputPath); // .ts, .js, .tsx, .jsx
-  const base = path.basename(inputPath, ext); // filename without extension
-  const testFileName = `${base}.test${ext}`; // keep original ext
-
-  return testFileName;
-}
 
 export async function writeTestFile(
   originalPath: string,
