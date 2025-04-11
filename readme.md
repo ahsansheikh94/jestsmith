@@ -40,27 +40,13 @@ npm install -g jestsmith
 
 ## 🧑‍💻 Usage
 
-### 1. Add your OpenAI API_KEY
-
-```bash
-export OPENAI_API_KEY=<Your OpenAI API KEY>
-```
-
-#### Or
-
-Add this to your project's local .env file:
-
-```bash
-OPENAI_API_KEY=<Your OpenAI API KEY>
-```
-
-### 2. Generate test for a single file
+### 1. Generate test for a single file
 
 ```bash
 jestsmith ./src/components/LoginForm.tsx --describe "A login form with Formik + Yup that hits a login API on submit"
 ```
 
-### 3. Generate test for a whole folder (e.g., a NestJS module)
+### 2. Generate test for a whole folder (e.g., a NestJS module)
 
 ```bash
 jestsmith ./src/modules/user --describe "This is a NestJS User module with CRUD operations"
